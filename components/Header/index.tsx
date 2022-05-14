@@ -1,3 +1,4 @@
+import { Input } from '../Input'
 import styles from './styles.module.scss'
 
 export function Header() {
@@ -8,10 +9,8 @@ export function Header() {
                 
                 <img src="/images/logo.png" alt="" />
                 
-                <div>
-                    <input />
-                </div>
-
+                <Input />
+                
                 <div>
                     perfil
                 </div>

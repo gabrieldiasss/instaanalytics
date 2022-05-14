@@ -1,5 +1,7 @@
 .container {
-    background-color: aqua;
+    background-color: var(--blue-500);
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+
 }
 
 .content {
@@ -10,7 +12,11 @@
     max-width: 980px;
     margin: 0 auto;
 
+    height: 5rem;
+
     img {
         cursor: pointer;
     }
+
+    
 }
