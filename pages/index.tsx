@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Link from "next/link";
+
 import { BsInstagram } from 'react-icons/bs'
 
 import styles from '../styles/Home.module.scss'
@@ -17,11 +19,13 @@ export default function Home() {
 					conta do instagram
 				</h2>
 
-				<button>
-					<BsInstagram />
-					
-					Logar
-				</button>
+				<Link href="/dashboard" passHref >
+					<button>
+						<BsInstagram />
+
+						Logar
+					</button>
+				</Link>
 			</div>
 		</>
 	)
