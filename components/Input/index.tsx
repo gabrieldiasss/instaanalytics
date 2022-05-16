@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
-import { GrClose } from 'react-icons/gr'
+import { MdOutlineClose } from 'react-icons/md'
+
 
 import styles from './styles.module.scss'
 
@@ -38,7 +39,7 @@ export function Input() {
                                     <span>diego3g</span>
                                 </div>
 
-                                <GrClose />
+                                <MdOutlineClose />
 
                             </div>
                         </li>
@@ -46,7 +47,7 @@ export function Input() {
                 )}
             </div>
 
-            <button><FiSearch /></button>
+            <button><FiSearch /> </button>
         </div>
     )
 }

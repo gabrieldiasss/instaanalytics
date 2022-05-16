@@ -1,6 +1,8 @@
 import { Input } from '../Input'
 import styles from './styles.module.scss'
 
+import { IoMdArrowDropdown } from 'react-icons/io'
+
 export function Header() {
 
     return (
@@ -11,8 +13,15 @@ export function Header() {
                 
                 <Input />
                 
-                <div>
-                    perfil
+                <div className={styles.profile} >
+
+                    <IoMdArrowDropdown />
+
+                    <span>
+                        Gabriel Dias
+                    </span>
+
+                    <img src="https://github.com/gabrieldiasss.png" alt="" />
                 </div>
             </div>
         </header>
