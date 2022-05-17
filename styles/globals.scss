@@ -67,3 +67,68 @@ a {
 svg {
 	cursor: pointer;
 }
+
+.react-modal-overlay {
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.react-modal-content {
+	width: 100%;
+	max-width: 576px;
+	background: var(--blue-900);
+	padding: 3rem;
+	position: relative;
+	border-radius: 0.25rem;
+
+	h1 {
+		margin-bottom: 1rem;
+	}
+
+	button {
+		width: 100%;
+		height: 3rem;
+
+		& + button {
+			margin-top: 1rem;
+		}
+	}
+
+	.yes {
+		background-color: #5CC4A3;
+
+		&:hover {
+			transition: .4s;
+			filter: brightness(0.90)
+		}
+	}
+
+	.close {
+		background-color: #DA4A49;
+
+		&:hover {
+			transition: .4s;
+			filter: brightness(0.95)
+		}
+	}
+}
+
+/* .react-modal-close {
+	position: absolute;
+	right: 1.5rem;
+	top: 1.5rem;
+	border: 0;
+	background: transparent;
+	transition: 0ms.2s;
+
+	&:hover {
+		filter: brightness(0.8)
+	}
+} */
