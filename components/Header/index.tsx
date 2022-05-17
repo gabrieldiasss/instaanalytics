@@ -10,11 +10,13 @@ export function Header() {
     return (
         <header className={styles.container} >
             <div className={styles.content} >
-                
-                <img src="/images/logo.png" alt="" />
-                
+
+                <Link href="/dashboard" >
+                    <img src="/images/logo.png" alt="" />
+                </Link>
+
                 <Input />
-                
+
                 <div className={styles.profile} >
 
                     <IoMdArrowDropdown />

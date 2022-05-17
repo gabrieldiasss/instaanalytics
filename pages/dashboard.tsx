@@ -7,8 +7,6 @@ export default function Dashboard() {
 
     const { open, setOpen } = useFocus()
 
-    console.log(open)
-
     return (
         <>
             <Head>

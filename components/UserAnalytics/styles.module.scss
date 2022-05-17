@@ -1,0 +1,34 @@
+.analytics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "analytics_1 analytics_1 analytics_2"
+        "analytics_3 analytics_4 analytics_4"
+    ;
+
+    grid-gap: 1rem;
+}
+
+.analytic1, .analytic2, .analytic3, .analytic4 {
+    background-color: var(--blue-500);
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
+
+    padding: 3rem 2rem;
+    border-radius: 10px;
+}
+
+.analytic1 {
+    grid-area: analytics_1;
+}
+
+.analytic2 {
+    grid-area: analytics_2;
+}
+
+.analytic3 {
+    grid-area: analytics_3;
+}
+
+.analytic4 {
+    grid-area: analytics_4;
+}
