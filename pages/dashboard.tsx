@@ -1,19 +1,24 @@
 import Head from "next/head";
 import { Header } from "../components/Header";
+import { useFocus } from "../contexts/useFocus";
 import styles from '../styles/dashboard.module.scss'
 
 export default function Dashboard() {
 
+    const { open, setOpen } = useFocus()
+
+    console.log(open)
+
     return (
         <>
-
             <Head>
+                <link rel="shortcut icon" href="favicon.png" type="image/png" />
                 <title>Insta Analytics | Dashboard</title>
             </Head>
 
             <Header />
 
-            <main className={styles.dashboard} >
+            <main onClick={() => setOpen(false)} className={styles.dashboard} >
 
                 <h1>Your Analytics</h1>
 
@@ -44,8 +49,6 @@ export default function Dashboard() {
                     </div>
 
                 </section>
-
-
             </main>
         </>
     )

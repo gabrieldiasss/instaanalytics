@@ -35,10 +35,18 @@
     overflow: hidden;
     overflow-y: auto;
 
+    .icon {
+        position: absolute;
+        right: 15px;
+    
+    }
+
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        margin-top: 1.4rem;
 
         .clear {
             color: var(--pink-500);
@@ -71,7 +79,7 @@
     }
 }
 
-.inputFake {    
+.inputFake {
 
     display: flex;
     align-items: center;
@@ -81,7 +89,7 @@
     height: 2.4rem;
     border-radius: 5px;
 
-    
+
     width: 300px;
 
     svg {
@@ -97,9 +105,10 @@
         color: var(--white);
         filter: brightness(0.90);
 
-        &::-webkit-input-placeholder { /* Edge */
+        &::-webkit-input-placeholder {
+            /* Edge */
             color: var(--blue-400);
-          }
+        }
     }
 }
 
@@ -109,10 +118,14 @@
     justify-content: space-between;
     flex: 1;
 
+    div {
+        display: flex;
+        flex-direction: column;
+
+    }
 
     svg {
         font-size: 1.4rem;
-        filter: brightness(0.90);
+        filter: brightness(0.75);
     }
 }
-

@@ -1,29 +1,27 @@
-import { useState } from 'react'
+import Link from 'next/link'
 import { FiSearch } from 'react-icons/fi'
 import { MdOutlineClose } from 'react-icons/md'
-
+import { useFocus } from '../../contexts/useFocus'
 
 import styles from './styles.module.scss'
 
 export function Input() {
 
-    const [open, setOpen] = useState(false)
-
-    function handleSearchFocus() {
-        setOpen(!open)
-    }
+    const { open, handleSearchFocus, handleSearchOnBlur } = useFocus()
 
     return (
         <div className={styles.inputContainer}>
             <div className={styles.input} >
                 <div className={styles.inputFake}>
                     <FiSearch />
-                    <input placeholder='Search' onFocus={handleSearchFocus} onBlur={handleSearchFocus} type="text" />
+                    <input placeholder='Search' onFocus={handleSearchFocus} type="text" />
                 </div>
 
                 {open && (
-                    <div className={styles.recents}>
+                    <div className={styles.recents}  >
 
+                        <MdOutlineClose onClick={() => handleSearchOnBlur()} className={styles.icon} />
+                        
                         <header>
                             <span>Recentes</span>
                             <span className={styles.clear}>Limpar histórico</span>
@@ -32,22 +30,22 @@ export function Input() {
                         <li className={styles.dataItem}>
                             <img src="https://github.com/diego3g.png" alt="" />
 
-                            <div className={styles.dataInfos} >
+                            <div className={styles.dataInfos}>
 
                                 <div>
-                                    <p>Diego Fernandes</p>
+                                    <Link href="/profile/gabriel">Diego Fernandes</Link>
                                     <span>diego3g</span>
                                 </div>
 
-                                <MdOutlineClose />
 
+                                <MdOutlineClose />
                             </div>
                         </li>
                     </div>
                 )}
             </div>
 
-            <button><FiSearch /> </button>
+            <button type="button"><FiSearch />  </button>
         </div>
     )
 }

@@ -1,7 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import { Input } from '../Input'
 import styles from './styles.module.scss'
 
 import { IoMdArrowDropdown } from 'react-icons/io'
+import Link from 'next/link'
 
 export function Header() {
 
