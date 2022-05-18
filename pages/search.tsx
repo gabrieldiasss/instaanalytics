@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { MdOutlineClose } from "react-icons/md";
@@ -7,6 +8,11 @@ export default function Search() {
 
     return (
         <>
+
+            <Head>
+                <title>Pesquisar</title>
+            </Head>
+
             <header className={styles.inputContainer} >
 
                 <div className={styles.inputFake}>
