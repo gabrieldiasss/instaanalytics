@@ -28,15 +28,19 @@
 .recents {
     margin-top: 1rem;
 
+    position: absolute;
+    width: 382px;
+    border-radius: 5px;
+
     @media(max-width: 600px) {
         width: 270px;
     }
 
+    background-color: var(--blue-900);
+
     padding: 1rem;
 
-    overflow: hidden;
-    overflow-y: auto;
-
+   
     .icon {
         position: absolute;
         right: 15px;

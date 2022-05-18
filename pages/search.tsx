@@ -8,7 +8,6 @@ export default function Search() {
 
     return (
         <>
-
             <Head>
                 <title>Pesquisar</title>
             </Head>
