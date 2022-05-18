@@ -3,8 +3,6 @@ import { FiSearch } from 'react-icons/fi'
 import { MdOutlineClose } from 'react-icons/md'
 import { useFocus } from '../../contexts/useFocus'
 
-import Modal from 'react-modal'
-
 import styles from './styles.module.scss'
 import { useState } from 'react'
 import CleanHistoryModal from '../CleanHistoryModal'

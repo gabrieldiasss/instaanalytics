@@ -1,12 +1,13 @@
 .inputContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    margin-top: 1rem;
 
     gap: 1rem;
 
-    @media(max-width: 500px) {
-        display: none;
-    }
+
 
     button {
         background-color: var(--pink-500);
@@ -25,62 +26,8 @@
     }
 }
 
-.recents {
-    margin-top: 1rem;
-
-    @media(max-width: 600px) {
-        width: 270px;
-    }
-
-    padding: 1rem;
-
-    overflow: hidden;
-    overflow-y: auto;
-
-    .icon {
-        position: absolute;
-        right: 15px;
-    }
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        margin-top: 1.4rem;
-
-        .clear {
-            color: var(--pink-500);
-            font-size: 0.8rem;
-            cursor: pointer;
-        }
-    }
-}
-
-.dataItem {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    cursor: pointer;
-
-    margin-top: 2rem;
-
-    span {
-        font-size: 1rem;
-        color: var(--white);
-
-        filter: brightness(0.70);
-        font-weight: 400;
-    }
-
-    img {
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-    }
-}
-
 .inputFake {
+
     display: flex;
     align-items: center;
 
@@ -115,6 +62,67 @@
     }
 }
 
+.recents {
+    max-width: 1200px;
+
+    margin-top: 1rem;
+    width: 90%;
+
+    margin: 0 auto;
+
+    padding: 1rem;
+
+    .icon {
+        position: absolute;
+        right: 15px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 1.4rem;
+
+        span {
+            font-size: 1.6rem;
+        }
+
+        .clear {
+            color: var(--pink-500);
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.dataItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    cursor: pointer;
+
+    margin-top: 2rem;
+
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #4F4C60;
+
+    span {
+        font-size: 1rem;
+        color: var(--white);
+
+        filter: brightness(0.70);
+        font-weight: 400;
+    }
+
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+}
+
 .dataInfos {
     display: flex;
     align-items: center;
@@ -124,7 +132,6 @@
     div {
         display: flex;
         flex-direction: column;
-
     }
 
     svg {

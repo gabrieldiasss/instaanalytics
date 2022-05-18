@@ -17,30 +17,16 @@
     img {
         cursor: pointer;
     }
+
+    .search {
+        font-size: 1.6rem;
+        filter: brightness(0.70);
+    }
 }
 
-.profile {
-    display: flex;
-    align-items: center;
-
-    img {
-        width: 3rem;
-        height: 3rem;
-        border-radius: 50%;
-    }
-
-    span {
-        margin: 0 1rem;
-    }
-
-    svg {
-        color: var(--pink-500);
-        font-size: 1.4rem;
-    }
-
-    span, svg {
-        @media(max-width: 700px) {
-            display: none;
-        }
-    }
+.buttonSearchMobile {
+    padding: 0.6rem;
+    background-color: var(--pink-500);
+    border-radius: 5px;
+    font-size: 0.8rem;
 }

@@ -1,0 +1,62 @@
+.profile {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    img {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+
+    span {
+        margin: 0 1rem;
+    }
+
+    svg {
+        color: var(--pink-500);
+        font-size: 1.4rem;
+
+        margin-right: 1rem;
+    }
+
+    span {
+        @media(max-width: 700px) {
+            display: none;
+        }
+    }
+}
+
+.modalUserHeader {
+    position: absolute;
+    margin-top: 8rem;
+    width: 100%;
+
+    padding: 1rem;
+
+    border-radius: 5px;
+    background: var(--blue-900);
+
+    li {
+        display: flex;
+        align-items: center;
+        
+        svg {
+            margin-right: 1rem;
+        }
+    }
+
+    @media(max-width: 700px) {
+       right: 0px;
+       width: 150%;
+    }
+}
+
+/* .searchUser {
+    @media(max-width: 700px) {
+        display: none;
+    }
+}
+ */

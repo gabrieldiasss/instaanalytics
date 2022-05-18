@@ -1,0 +1,15 @@
+.button {
+
+    @media(min-width: 500px) {
+        display: none;
+    }
+
+    background-color: var(--pink-500);
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    
+    svg {
+        
+        filter: brightness(0.90);
+    }
+}

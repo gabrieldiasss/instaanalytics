@@ -2,9 +2,10 @@
 import { Input } from '../Input'
 import styles from './styles.module.scss'
 
-import { IoMdArrowDropdown } from 'react-icons/io'
 import Link from 'next/link'
 import Image from 'next/image'
+import User from '../User'
+import ButtonSearchHeader from '../ButtonSearchHeader'
 
 export function Header() {
 
@@ -18,16 +19,11 @@ export function Header() {
 
                 <Input />
 
-                <div className={styles.profile} >
+                <Link href="/" >
+                    <ButtonSearchHeader />
+                </Link>
 
-                    <IoMdArrowDropdown />
-
-                    <span>
-                        Gabriel Dias
-                    </span>
-
-                    <img src="https://github.com/gabrieldiasss.png" alt="" />
-                </div>
+                <User />
             </div>
         </header>
     )
