@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 export function UserAnalytics() {
 
     return (
-        <main>
+        <main className={styles.container} >
             <section className={styles.analytics} >
                 <div className={styles.analytic1} >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam, repudiandae maiores vero modi nisi excepturi nobis cum tempore cupiditate eius esse similique? Quis perspiciatis quibusdam perferendis assumenda. Sit, alias?

@@ -1,7 +1,6 @@
 .container {
     background-color: var(--blue-500);
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
-
 }
 
 .content {
@@ -13,14 +12,11 @@
     margin: 0 auto;
     width: 90%;
 
-    
-
     height: 5rem;
 
     img {
         cursor: pointer;
     }
-
 }
 
 .profile {
@@ -40,5 +36,11 @@
     svg {
         color: var(--pink-500);
         font-size: 1.4rem;
+    }
+
+    span, svg {
+        @media(max-width: 700px) {
+            display: none;
+        }
     }
 }

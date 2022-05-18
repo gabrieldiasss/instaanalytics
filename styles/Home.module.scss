@@ -2,7 +2,7 @@
 
     background-color: var(--blue-400);
 
-    max-width: 500px;
+    max-width: 400px;
 
     position: absolute;
     top: 50%;
@@ -11,6 +11,10 @@
 
     border-radius: 5px;
     padding: 2rem 3rem;
+
+    @media(max-width: 500px) {
+        width: 300px;
+    }
 
     p {
         font-size: 2rem;

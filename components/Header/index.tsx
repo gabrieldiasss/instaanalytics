@@ -1,9 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
+
 import { Input } from '../Input'
 import styles from './styles.module.scss'
 
 import { IoMdArrowDropdown } from 'react-icons/io'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Header() {
 
@@ -12,7 +13,7 @@ export function Header() {
             <div className={styles.content} >
 
                 <Link href="/dashboard" >
-                    <img src="/images/logo.png" alt="" />
+                    <Image width={42} height={42} src="/images/logo.png" alt="" />
                 </Link>
 
                 <Input />

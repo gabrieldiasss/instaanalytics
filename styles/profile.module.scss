@@ -3,7 +3,14 @@
     margin: 4rem auto;
     padding-bottom: 2rem;
 
+    width: 90%;
+
     display: flex;
     align-items: flex-start;
+
+    @media(max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 

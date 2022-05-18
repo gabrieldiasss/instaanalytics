@@ -2,22 +2,49 @@
     max-width: 1200px;
     margin: 4rem auto 0 auto;
     padding-bottom: 2rem;
+
+    width: 90%;
 }
 
 .analytics {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
         "analytic_1 analytic_1 analytic_2 analytic_3"
         "analytic_4 analytic_5 analytic_6 analytic_6"
-        ;
-    
+    ;
 
     margin-top: 1rem;
+
+    @media(max-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "analytic_1 analytic_1 analytic_2"
+            "analytic_3 analytic_3 analytic_4"
+            "analytic_5 analytic_6 analytic_6"
+        ;
+    }
+
+    @media(max-width: 500px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "analytic_1"
+            "analytic_2"
+            "analytic_3"
+            "analytic_4"
+            "analytic_5"
+            "analytic_6"
+        ;
+    }
 }
 
-.analytic1, .analytic2, .analytic3, .analytic4, .analytic5, .analytic6 {
+.analytic1,
+.analytic2,
+.analytic3,
+.analytic4,
+.analytic5,
+.analytic6 {
     background-color: var(--blue-500);
 
     cursor: pointer;
@@ -48,9 +75,6 @@
     grid-area: analytic_5;
 }
 
-
 .analytic6 {
     grid-area: analytic_6;
 }
-
-

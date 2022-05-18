@@ -4,6 +4,10 @@
 
     gap: 1rem;
 
+    @media(max-width: 500px) {
+        display: none;
+    }
+
     button {
         background-color: var(--pink-500);
 
@@ -26,6 +30,10 @@
 
     margin-top: 1rem;
     width: 382px;
+
+    @media(max-width: 600px) {
+        width: 270px;
+    }
 
     border-radius: 5px;
     background: var(--blue-900);
@@ -89,8 +97,11 @@
     height: 2.4rem;
     border-radius: 5px;
 
-
     width: 300px;
+    
+    @media(max-width: 600px) {
+        width: 200px;
+    }
 
     svg {
         filter: brightness(0.65);

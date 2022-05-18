@@ -1,3 +1,9 @@
+.container {
+    @media(max-width: 600px) {
+        margin-top: 1rem;
+    }
+}
+
 .analytics {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -7,6 +13,25 @@
     ;
 
     grid-gap: 1rem;
+
+    @media(max-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "analytics_1 analytics_1"
+        "analytics_2 analytics_3"
+        "analytics_4 analytics_4"
+        ;
+    }
+
+    @media(max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "analytics_1"
+            "analytics_2"
+            "analytics_3"
+            "analytics_4"
+        ;
+    }
 }
 
 .analytic1, .analytic2, .analytic3, .analytic4 {
