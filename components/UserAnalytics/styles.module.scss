@@ -1,4 +1,5 @@
 .container {
+    flex: 1;
     @media(max-width: 600px) {
         margin-top: 1rem;
     }
@@ -8,8 +9,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-        "analytics_1 analytics_1 analytics_2"
-        "analytics_3 analytics_4 analytics_4"
+        "analytics_1 analytics_1 analytics_1"
+        "analytics_2 analytics_2 analytics_2"
+        "analytics_3 analytics_3 analytics_3"
+        "analytics_4 analytics_4 analytics_4"
     ;
 
     grid-gap: 1rem;
@@ -38,8 +41,12 @@
     background-color: var(--blue-500);
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
 
-    padding: 3rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     border-radius: 10px;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
 }
 
 .analytic1 {
@@ -52,6 +59,9 @@
 
 .analytic3 {
     grid-area: analytics_3;
+
+    display: flex;
+    gap: 2rem;
 }
 
 .analytic4 {

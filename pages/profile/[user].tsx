@@ -17,7 +17,6 @@ export default function User() {
 
     return (
         <>
-
             <Head>
                 <title>Insta Analytics | Gabriel Dias</title>
             </Head>
@@ -26,11 +25,9 @@ export default function User() {
 
             <main onClick={() => setOpen(false)} >
                 <section className={styles.content} >
-
                     <UserProfile />
 
                     <UserAnalytics />
-
                 </section>
             </main>
         </>
