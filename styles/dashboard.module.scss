@@ -2,7 +2,6 @@
     max-width: 1200px;
     margin: 4rem auto 0 auto;
     padding-bottom: 2rem;
-
     width: 90%;
 }
 
@@ -11,8 +10,9 @@
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "analytic_1 analytic_1 analytic_2 analytic_3"
-        "analytic_4 analytic_5 analytic_6 analytic_6"
+        "analytic_1 analytic_1 analytic_2 analytic_2"
+        "analytic_3 analytic_3 analytic_3 analytic_3"
+        "analytic_4 analytic_4 analytic_4 analytic_4"
     ;
 
     margin-top: 1rem;
@@ -20,9 +20,10 @@
     @media(max-width: 1000px) {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-            "analytic_1 analytic_1 analytic_2"
-            "analytic_3 analytic_3 analytic_4"
-            "analytic_5 analytic_6 analytic_6"
+            "analytic_1"
+            "analytic_2"
+            "analytic_3"
+            "analytic_4"
         ;
     }
 
@@ -49,6 +50,10 @@
 
     cursor: pointer;
 
+    h1 {
+        margin-bottom: 2rem;
+    }
+
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.25);
@@ -56,6 +61,7 @@
 
 .analytic1 {
     grid-area: analytic_1;
+    
 }
 
 .analytic2 {
@@ -64,17 +70,12 @@
 
 .analytic3 {
     grid-area: analytic_3;
+    display: flex;
+
+    gap: 2rem;
 }
 
 .analytic4 {
     grid-area: analytic_4;
-}
-
-
-.analytic5 {
-    grid-area: analytic_5;
-}
-
-.analytic6 {
-    grid-area: analytic_6;
-}
+} 
+ 
